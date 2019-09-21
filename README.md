@@ -1,19 +1,6 @@
 # React Tic Tac Toe Game
 
-React Tic Tac Toe Game
-
-### System Dependencies
-* [Node.js](https://nodejs.org/en/) and NPM. (**Note:** NPM comes with Node.js)
-
-### Build Tools Used
-* [Webpack](https://webpack.js.org/) - Module Bundler
-* [SASS](https://sass-lang.com/) - CSS Preprocessor
-* [PostCSS](https://postcss.org/) - A tool for transforming CSS with JavaScript
-* [ESLint](https://eslint.org/) - JavaScript Linting Utility
-* [Stylelint](https://stylelint.io/) - Styles Linting Utility
-* [Babel](https://babeljs.io/) - JavaScript Compiler
-* [Pug](https://pugjs.org/api/getting-started.html) - Pug Template Engine
-* [Jest](https://jestjs.io/) - JavaScript Testing Framework
+This is the React Tic Tac Toe game from the tutorial in [reactjs.org](https://reactjs.org/tutorial/tutorial.html)'s site but with my own twist in the implementation.
 
 
 ### Getting Started
