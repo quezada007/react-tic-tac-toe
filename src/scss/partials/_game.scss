@@ -16,6 +16,7 @@ $squareSize: 80px;
 
         &__row {
             display: flex;
+            justify-content: center;
         }
 
         &__square {
@@ -27,6 +28,7 @@ $squareSize: 80px;
             border: 1px solid color(black);
             background-color: transparent;
             margin: -1px -1px 0 0;
+            padding: 0;
             font-size: rem(50);
             font-weight: bold;
             text-align: center;
