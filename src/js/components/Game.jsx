@@ -113,9 +113,6 @@ class Game extends React.Component {
         }
         return (
             <>
-                <header>
-                    <h1>Tic Tac Toe Game</h1>
-                </header>
                 <div className="game">
                     <div className="game__board">
                         <Board squares={current.squares} handleClick={this.handleClick} />
