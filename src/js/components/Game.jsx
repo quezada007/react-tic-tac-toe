@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { hot } from 'react-hot-loader/root';
 import React from 'react';
 import Board from './Board';
@@ -71,8 +70,8 @@ class Game extends React.Component {
             ? `Go to Move #${move}`
             : 'Go to Game Start';
         return (
-            <li key={move.toString()}>
-                <button type="button" onClick={() => this.jumpTo(move)}>{desc}</button>
+            <li className="game__step" key={move.toString()}>
+                <button type="button" className="game__step__btn" onClick={() => this.jumpTo(move)}>{desc}</button>
             </li>
         );
     });
@@ -91,14 +90,16 @@ class Game extends React.Component {
         }
         return (
             <>
-                <h1>Tic Tac Toe Game</h1>
+                <header>
+                    <h1>Tic Tac Toe Game</h1>
+                </header>
                 <div className="game">
                     <div className="game__board">
                         <Board squares={current.squares} handleClick={this.handleClick} />
                     </div>
                     <div className="game__info">
                         <div className="game__status">{status}</div>
-                        <ol>{moves}</ol>
+                        <ol className="game__steps">{moves}</ol>
                     </div>
                 </div>
             </>
