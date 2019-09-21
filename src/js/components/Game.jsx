@@ -59,10 +59,28 @@ class Game extends React.Component {
         });
     }
 
+    jumpTo = (step) => {
+        this.setState({
+            stepNumber: step,
+            isXNext: (step % 2) === 0
+        });
+    }
+
+    getMoves = (history) => history.map((step, move) => {
+        const desc = move
+            ? `Go to Move #${move}`
+            : 'Go to Game Start';
+        return (
+            <li key={move.toString()}>
+                <button type="button" onClick={() => this.jumpTo(move)}>{desc}</button>
+            </li>
+        );
+    });
+
     render() {
         const { history, stepNumber, isXNext } = this.state;
         let status = `The Next Player is ${isXNext ? 'X' : 'O'}`;
-        const moves = '';
+        const moves = this.getMoves(history);
         const current = history[stepNumber];
         const winner = this.calculateWinner(current.squares);
         if (winner) {
