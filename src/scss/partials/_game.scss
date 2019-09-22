@@ -33,6 +33,22 @@ $squareSize: 80px;
             font-weight: bold;
             text-align: center;
             cursor: pointer;
+
+            &.no-top-border {
+                border-top: none;
+            }
+
+            &.no-right-border {
+                border-right: none;
+            }
+
+            &.no-bottom-border {
+                border-bottom: none;
+            }
+
+            &.no-left-border {
+                border-left: none;
+            }
         }
     }
 
